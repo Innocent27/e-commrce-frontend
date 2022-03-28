@@ -1,1 +1,1 @@
-# e-commrce-frontend
+# capstone-project-backend

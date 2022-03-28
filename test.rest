@@ -1,0 +1,118 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+    "name": "Lindo",
+    "email": "lindo@gmail.com",
+    "password": "123456789",
+    "phone_number": "0833899456"
+}
+
+###
+
+PATCH http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "email": "ubaid@gmail.com",
+    "password": "pass"
+}
+
+###
+
+PUT http://localhost:4000/users/62162ad5adefa837b0a82192/
+Content-Type: application/json
+
+{
+    "password": "lifechoices1234"
+}
+
+
+###
+
+DELETE http://localhost:3000/users/62303f3aa434ae3c6dd0e9ee
+
+###
+
+GET http://localhost:2000/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+
+###
+
+GET http://localhost:2000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+
+
+###
+
+POST http://localhost:2000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+    "title": "Resistor",
+    "category": "Electronics",
+    "description": "100k resistor with tolerance of +-5% Red led with a wavelength of 700 nm",
+    "img_front": "https://i.postimg.cc/mkrSK1qC/resistor.jpg",
+    "img_back": "https://i.postimg.cc/tJrBgNPB/resistor-Inboard.jpg",
+    "price": "500"
+}
+###
+POST http://localhost:2000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+    "title": "Leds",
+    "category": "electronics",
+    "description": "100k resistor with tolerance of +-5%",
+    "img_front": "https://i.postimg.cc/MHKmQfmX/led-2023979-340.png",
+    "img_back": "https://i.postimg.cc/XNzC8PVs/led-2953660-340.jpg",
+    "price": "300"
+}
+###
+POST http://localhost:2000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+    "title": "Capacitor",
+    "category": "Elecronics",
+    "description": "High frequency capacity, its very good for RF communication",
+    "img_front": "https://i.postimg.cc/kXfNjtyx/image.jpg",
+    "img_back": "https://i.postimg.cc/qqZRK08C/circuit-1443256-960-720.jpg",
+    "price": "400"
+}
+###
+PUT http://localhost:4000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+     "title": "Simba",
+     "category": "Snacks",
+     "description": "Creamy Cheddar Flavour",
+     "img": "https://www.game.co.za/medias/811748-EA-1200x1200.jpg?context=bWFzdGVyfGltYWdlc19vbmVjb218Mjc1NTcxfGltYWdlL2pwZWd8aGYzL2g1Yi84ODg2NjI5NzYxMDU0LmpwZ3xkOGU2NDc1MzJmOTZjOTQzN2NmNDkyMTQzZDVlYmY0YTBmNWNmMzM0YWZkM2YzOTFmM2IxM2EwNzYxZDEyOWQ1",
+     "price": "8"
+}
+
+###
+
+DELETE http://localhost:2000/products/623ef1fc3dd78f1c7bee2d78
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/contact
+Content-Type: application/json
+
+{
+    "name": "Lindokuhle",
+    "email": "lindokuhlenkamela@gmail.com",
+    "textarea": "Good day testing nodemailer"
+}

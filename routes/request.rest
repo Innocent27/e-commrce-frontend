@@ -1,0 +1,97 @@
+GET http://localhost:4000/users
+
+###
+
+GET http://localhost:4000/users/62162ad5adefa837b0a82192/
+
+###
+
+POST http://localhost:4000/users/
+Content-Type: application/json
+
+{
+    "fullname": "ubaid",
+    "email": "ubaid@gmail.com",
+    "password": "pass",
+    "phone_number": "0213899456"
+}
+
+###
+
+PATCH http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "email": "ubaid@gmail.com",
+    "password": "pass"
+}
+
+###
+
+PUT http://localhost:4000/users/62162ad5adefa837b0a82192/
+Content-Type: application/json
+
+{
+    "password": "lifechoices1234"
+}
+
+
+###
+
+DELETE http://localhost:4000/users/
+
+###
+
+GET http://localhost:4000/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+
+###
+
+GET http://localhost:4000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+
+
+###
+
+POST http://localhost:4000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+    "title": "sdfghjkiuytrfdxcsd",
+    "body": "aasofoefmsoefm",
+    "date": "",
+    "author": "ayoooo"
+}
+
+###
+
+PUT http://localhost:4000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+{
+     "title": "Simba",
+     "category": "Snacks",
+     "description": "Creamy Cheddar Flavour",
+     "img": "https://www.game.co.za/medias/811748-EA-1200x1200.jpg?context=bWFzdGVyfGltYWdlc19vbmVjb218Mjc1NTcxfGltYWdlL2pwZWd8aGYzL2g1Yi84ODg2NjI5NzYxMDU0LmpwZ3xkOGU2NDc1MzJmOTZjOTQzN2NmNDkyMTQzZDVlYmY0YTBmNWNmMzM0YWZkM2YzOTFmM2IxM2EwNzYxZDEyOWQ1",
+     "price": "8"
+}
+
+###
+
+DELETE http://localhost:4000/products/
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjE4ZDMwZjY0NjI2N2M4ZTI4ZjkyZjMiLCJmdWxsbmFtZSI6InViYWlkIiwiZW1haWwiOiJ1YmFpZEBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRMMXRHNUh3d2Y0QkovNm14bzA0d21PZDBVZ0RwWWllZTl3WFZxTHVZUTVwdEc3OFJpc2JjQyIsInBob25lX251bWJlciI6IjAyMTM4OTk0NTYiLCJjYXJ0IjpbXSwiam9pbl9kYXRlIjoiMjAyMi0wMi0yNVQxMzowMTowMy40NjRaIiwiX192IjowfQ.-OqTgG5jpH7c6_fWZG0NEDQh1otXnJE6lcDIVsRCyCs
+Content-Type: application/json
+
+###
+
+POST http://localhost:5000/contact
+Content-Type: application/json
+
+{
+    "name": "Darren",
+    "email": "darren@gmail.com",
+    "textarea": "Hi this is a test"
+}
+
